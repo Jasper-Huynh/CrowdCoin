@@ -53,10 +53,15 @@ adds the contributers address to the approvers mapping and sets their status to 
 Adds +1 to approversCount, our list to keep track of how many contributors we have without 
 using/iterating an array  */
     function contribute() public payable {
-        require(msg.value > minimumContribution);
+       
+        bool isExisted = approvers[msg.sender];
 
-        approvers[msg.sender] = true;
-        approversCount++;
+        if (!isExisted) {
+             require(msg.value > minimumContribution);
+        
+            approvers[msg.sender] = true;
+            approversCount++;
+        }
     }
 
 /*  function to request funds to be released for production. takes a description, value, and address of 
@@ -98,5 +103,21 @@ specified value to the specified address */
 
         request.recipient.transfer(request.value);
         request.complete = true;
+    }
+
+    function getSummary() public view returns (
+        uint, uint, uint, uint, address
+    ) {
+        return (
+            minimumContribution,
+            this.balance,
+            requests.length,
+            approversCount,
+            manager
+        );
+    }
+
+    function getRequestsCount() public view returns (uint) {
+        return requests.length;
     }
 }
