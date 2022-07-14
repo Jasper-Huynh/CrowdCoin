@@ -1,3 +1,6 @@
+/* Our page to display Campaign details. calls getSummary function and defines Key:value
+for ease of use with semantic-ui Card Group and Grid. */
+
 import React, { Component } from 'react';
 import web3 from '../../ethereum/web3';
 import Layout from '../../components/Layout';

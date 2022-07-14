@@ -1,3 +1,5 @@
+// our instance of the deployed campaign factory and the address of its location on the blockchain //
+
 import web3 from './web3';
 import CampaignFactory from './build/CampaignFactory.json';
 

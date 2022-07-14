@@ -1,3 +1,5 @@
+// Script to display request information corresponding to our TableRequest script //
+
 import React, { Component } from 'react';
 import { Table, Button, Message } from 'semantic-ui-react';
 import web3 from '../ethereum/web3';

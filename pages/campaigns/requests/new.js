@@ -1,3 +1,6 @@
+/* script for a create a new request page. uses Form, Button, Message to handle state changes
+and input. Route and Link to refresh page after success */
+
 import React, { Component } from 'react';
 import Layout from '../../../components/Layout';
 import { Button, Form, Message, Input } from 'semantic-ui-react';

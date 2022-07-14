@@ -1,3 +1,5 @@
+/* Our create a campaign page. Use of state and event handlers */
+
 import React, { Component } from 'react';
 import Layout from '../../components/Layout';
 import { Form, Button, Input, Message } from 'semantic-ui-react';

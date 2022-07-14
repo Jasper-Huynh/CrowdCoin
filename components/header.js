@@ -1,3 +1,5 @@
+/* script to create and reuse our Header for each page */
+
 import React from 'react';
 import { Menu } from 'semantic-ui-react';
 import { Link } from '../routes';

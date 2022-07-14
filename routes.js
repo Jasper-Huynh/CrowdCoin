@@ -1,3 +1,7 @@
+/* Next-routes allows us to set up dynamic routing, where the address of the campaign
+is part of the path. REQUIRED - server.js script to tell next.js to use this file/routes
+that we set up. */
+
 const routes = require('next-routes')();
 
 routes

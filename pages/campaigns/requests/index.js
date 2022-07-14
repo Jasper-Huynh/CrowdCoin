@@ -1,3 +1,6 @@
+/* Script for our view requests page. Uses Table to establish Headers and Promise all to 
+retrieve each individual request */
+
 import React, { Component } from 'react';
 import Layout from '../../../components/Layout';
 import { Button, Table } from 'semantic-ui-react';
@@ -44,7 +47,9 @@ class RequestIndex extends Component {
         <h3>Requests</h3>
         <Link route={`/campaigns/${this.props.address}/requests/new`}>
           <a>
-            <Button primary floated="right" style={{ marginBottom: 10}}>Create Request</Button>
+            <Button primary floated="right" style={{ marginBottom: 10 }}>
+              Create Request
+            </Button>
           </a>
         </Link>
         <Table>

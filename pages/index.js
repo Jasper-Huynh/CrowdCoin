@@ -1,3 +1,8 @@
+/* Our main landing page for CrowdCoin. using React and semantic-ui, we've displayed 
+our deployed Factory instance by calling the getDeployedCampaigns function. Layout and 
+Header are used for all pages, and created in a seperate 'Components' folder. LINK and 
+Route are used with ES6 syntax for defining routes. */
+
 import React, { Component } from 'react';
 import { Card, Button } from 'semantic-ui-react';
 import factory from '../ethereum/factory';

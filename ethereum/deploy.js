@@ -1,3 +1,7 @@
+/* Script to deploy our Solidity contract to the blockchain. uses the .json files that are created
+from our compile script. Our provider, being that this is only testing, the full mmenonic is written.
+In actual deployment, additional coding would be required to secure */
+
 const HDWalletProvider = require('@truffle/hdwallet-provider');
 const Web3 = require('web3');
 const compiledFactory = require('./build/CampaignFactory.json');
